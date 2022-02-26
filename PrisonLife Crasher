@@ -1,5 +1,6 @@
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("CRASHER MADE BY oq7y / oq6809 on d-disco","All")
 
+while wait(.2) do
 local Gun = "Remington 870"
 
 local Player = game.Players.LocalPlayer.Name
@@ -33,5 +34,6 @@ end
 while game:GetService("RunService").Stepped:wait() do
 for count = 0, 10, 10 do
 FireGun()
+end
 end
 end
