@@ -1,3 +1,5 @@
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("CRASHER MADE BY oq7y / oq6809 on d-disco","All")
+
 local Gun = "Remington 870"
 
 local Player = game.Players.LocalPlayer.Name
