@@ -87,7 +87,7 @@ RunService.Heartbeat:connect(function()
         Circle.Visible = Settings.Settings.FOV
         Circle.Thickness = 1.5
         Circle.Thickness = 2
-        Circle.Radius = 60
+        Circle.Radius = 180
         Circle.Color = Settings.Settings.Color
     elseif Settings.AimLock.FOV == true then
         Circle.Visible = true
