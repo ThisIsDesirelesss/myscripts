@@ -1,0 +1,601 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local fbn = Instance.new("TextButton")
+local insultrobloxgame = Instance.new("TextButton")
+local insultrobloxgamev2 = Instance.new("TextButton")
+local girl = Instance.new("TextButton")
+local boy = Instance.new("TextButton")
+local dude = Instance.new("TextButton")
+local bruh = Instance.new("TextButton")
+local InsultHub = Instance.new("TextLabel")
+local uaintsh = Instance.new("TextButton")
+local uaintsh2 = Instance.new("TextButton")
+local goaway = Instance.new("TextButton")
+local goaway2 = Instance.new("TextButton")
+local idonttalkto = Instance.new("TextButton")
+local idonttalkto2 = Instance.new("TextButton")
+local wehate = Instance.new("TextButton")
+local ihate = Instance.new("TextButton")
+local donttalktome = Instance.new("TextButton")
+local hangall = Instance.new("TextButton")
+local burnall = Instance.new("TextButton")
+local killall = Instance.new("TextButton")
+local fucknig = Instance.new("TextButton")
+local fuckallnig = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.122989371, 0, 0.30742237, 0)
+Frame.Size = UDim2.new(0, 572, 0, 249)
+
+fbn.Name = "fbn"
+fbn.Parent = Frame
+fbn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fbn.Position = UDim2.new(-0.00317651872, 0, 0.140888751, 0)
+fbn.Size = UDim2.new(0, 105, 0, 32)
+fbn.Font = Enum.Font.SourceSans
+fbn.Text = "fuck black niggers"
+fbn.TextColor3 = Color3.fromRGB(0, 0, 0)
+fbn.TextSize = 14.000
+
+insultrobloxgame.Name = "insultrobloxgame"
+insultrobloxgame.Parent = Frame
+insultrobloxgame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+insultrobloxgame.Position = UDim2.new(-0.00147181749, 0, 0.257252395, 0)
+insultrobloxgame.Size = UDim2.new(0, 105, 0, 32)
+insultrobloxgame.Font = Enum.Font.SourceSans
+insultrobloxgame.Text = "Insult Roblox"
+insultrobloxgame.TextColor3 = Color3.fromRGB(0, 0, 0)
+insultrobloxgame.TextSize = 14.000
+
+insultrobloxgamev2.Name = "insultrobloxgamev2"
+insultrobloxgamev2.Parent = Frame
+insultrobloxgamev2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+insultrobloxgamev2.Position = UDim2.new(0.178679004, 0, 0.257252395, 0)
+insultrobloxgamev2.Size = UDim2.new(0, 105, 0, 32)
+insultrobloxgamev2.Font = Enum.Font.SourceSans
+insultrobloxgamev2.Text = "Insult Roblox v2"
+insultrobloxgamev2.TextColor3 = Color3.fromRGB(0, 0, 0)
+insultrobloxgamev2.TextSize = 14.000
+
+girl.Name = "girl"
+girl.Parent = Frame
+girl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+girl.Position = UDim2.new(0.180414826, 0, 0.37725234, 0)
+girl.Size = UDim2.new(0, 105, 0, 32)
+girl.Font = Enum.Font.SourceSans
+girl.Text = "Girl Fuck Off"
+girl.TextColor3 = Color3.fromRGB(0, 0, 0)
+girl.TextSize = 14.000
+
+boy.Name = "boy"
+boy.Parent = Frame
+boy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+boy.Position = UDim2.new(-0.00319509488, 0, 0.37725243, 0)
+boy.Size = UDim2.new(0, 105, 0, 32)
+boy.Font = Enum.Font.SourceSans
+boy.Text = "Boy Fuck Off"
+boy.TextColor3 = Color3.fromRGB(0, 0, 0)
+boy.TextSize = 14.000
+
+dude.Name = "dude"
+dude.Parent = Frame
+dude.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dude.Position = UDim2.new(0.363981277, 0, 0.37725234, 0)
+dude.Size = UDim2.new(0, 105, 0, 32)
+dude.Font = Enum.Font.SourceSans
+dude.Text = "Dude Fuck Off"
+dude.TextColor3 = Color3.fromRGB(0, 0, 0)
+dude.TextSize = 14.000
+
+bruh.Name = "bruh"
+bruh.Parent = Frame
+bruh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bruh.Position = UDim2.new(0.547547698, 0, 0.37725234, 0)
+bruh.Size = UDim2.new(0, 105, 0, 32)
+bruh.Font = Enum.Font.SourceSans
+bruh.Text = "Bruh Fuck Off"
+bruh.TextColor3 = Color3.fromRGB(0, 0, 0)
+bruh.TextSize = 14.000
+
+InsultHub.Name = "InsultHub"
+InsultHub.Parent = Frame
+InsultHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsultHub.BackgroundTransparency = 1.000
+InsultHub.Position = UDim2.new(0.308314323, 0, -0.00349706411, 0)
+InsultHub.Size = UDim2.new(0, 200, 0, 31)
+InsultHub.Font = Enum.Font.FredokaOne
+InsultHub.Text = "InsultHub"
+InsultHub.TextColor3 = Color3.fromRGB(20, 110, 255)
+InsultHub.TextSize = 34.000
+InsultHub.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+InsultHub.TextStrokeTransparency = 0.000
+InsultHub.TextYAlignment = Enum.TextYAlignment.Top
+
+uaintsh.Name = "uaintsh"
+uaintsh.Parent = Frame
+uaintsh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uaintsh.Position = UDim2.new(-0.0049433466, 0, 0.493616074, 0)
+uaintsh.Size = UDim2.new(0, 105, 0, 32)
+uaintsh.Font = Enum.Font.SourceSans
+uaintsh.Text = "u aint shit stupid nigga"
+uaintsh.TextColor3 = Color3.fromRGB(0, 0, 0)
+uaintsh.TextScaled = true
+uaintsh.TextWrapped = true
+
+uaintsh2.Name = "uaintsh2"
+uaintsh2.Parent = Frame
+uaintsh2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uaintsh2.Position = UDim2.new(0.180371344, 0, 0.493616074, 0)
+uaintsh2.Size = UDim2.new(0, 105, 0, 32)
+uaintsh2.Font = Enum.Font.SourceSans
+uaintsh2.Text = "u aint shit dumb nigga"
+uaintsh2.TextColor3 = Color3.fromRGB(0, 0, 0)
+uaintsh2.TextScaled = true
+uaintsh2.TextSize = 14.000
+uaintsh2.TextWrapped = true
+
+goaway.Name = "goaway"
+goaway.Parent = Frame
+goaway.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+goaway.Position = UDim2.new(0.363937795, 0, 0.493616074, 0)
+goaway.Size = UDim2.new(0, 105, 0, 32)
+goaway.Font = Enum.Font.SourceSans
+goaway.Text = "Go away Dumb Nigga"
+goaway.TextColor3 = Color3.fromRGB(0, 0, 0)
+goaway.TextScaled = true
+goaway.TextSize = 14.000
+goaway.TextWrapped = true
+
+goaway2.Name = "goaway2"
+goaway2.Parent = Frame
+goaway2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+goaway2.Position = UDim2.new(0.547504246, 0, 0.493616074, 0)
+goaway2.Size = UDim2.new(0, 105, 0, 32)
+goaway2.Font = Enum.Font.SourceSans
+goaway2.Text = "Go away Stupid Nigga"
+goaway2.TextColor3 = Color3.fromRGB(0, 0, 0)
+goaway2.TextScaled = true
+goaway2.TextSize = 14.000
+goaway2.TextWrapped = true
+
+idonttalkto.Name = "idonttalkto"
+idonttalkto.Parent = Frame
+idonttalkto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+idonttalkto.Position = UDim2.new(0.731070697, 0, 0.493616074, 0)
+idonttalkto.Size = UDim2.new(0, 105, 0, 32)
+idonttalkto.Font = Enum.Font.SourceSans
+idonttalkto.Text = "i dont talk to niggers"
+idonttalkto.TextColor3 = Color3.fromRGB(0, 0, 0)
+idonttalkto.TextScaled = true
+idonttalkto.TextSize = 14.000
+idonttalkto.TextWrapped = true
+
+idonttalkto2.Name = "idonttalkto2"
+idonttalkto2.Parent = Frame
+idonttalkto2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+idonttalkto2.Position = UDim2.new(0.731070697, 0, 0.609979689, 0)
+idonttalkto2.Size = UDim2.new(0, 105, 0, 32)
+idonttalkto2.Font = Enum.Font.SourceSans
+idonttalkto2.Text = "i dont talk to niggas"
+idonttalkto2.TextColor3 = Color3.fromRGB(0, 0, 0)
+idonttalkto2.TextScaled = true
+idonttalkto2.TextSize = 14.000
+idonttalkto2.TextWrapped = true
+
+wehate.Name = "wehate"
+wehate.Parent = Frame
+wehate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wehate.Position = UDim2.new(-0.00144678354, 0, 0.609979689, 0)
+wehate.Size = UDim2.new(0, 105, 0, 32)
+wehate.Font = Enum.Font.SourceSans
+wehate.Text = "we hate niggers"
+wehate.TextColor3 = Color3.fromRGB(0, 0, 0)
+wehate.TextScaled = true
+wehate.TextSize = 14.000
+wehate.TextWrapped = true
+
+ihate.Name = "ihate"
+ihate.Parent = Frame
+ihate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ihate.Position = UDim2.new(0.182119653, 0, 0.609979689, 0)
+ihate.Size = UDim2.new(0, 105, 0, 32)
+ihate.Font = Enum.Font.SourceSans
+ihate.Text = "i hate niggers"
+ihate.TextColor3 = Color3.fromRGB(0, 0, 0)
+ihate.TextScaled = true
+ihate.TextSize = 14.000
+ihate.TextWrapped = true
+
+donttalktome.Name = "donttalktome"
+donttalktome.Parent = Frame
+donttalktome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+donttalktome.Position = UDim2.new(0.362189591, 0, 0.622027874, 0)
+donttalktome.Size = UDim2.new(0, 105, 0, 32)
+donttalktome.Font = Enum.Font.SourceSans
+donttalktome.Text = "Dont Talk to me nigger"
+donttalktome.TextColor3 = Color3.fromRGB(0, 0, 0)
+donttalktome.TextScaled = true
+donttalktome.TextSize = 14.000
+donttalktome.TextWrapped = true
+
+hangall.Name = "hangall"
+hangall.Parent = Frame
+hangall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hangall.Position = UDim2.new(0.545756042, 0, 0.609979689, 0)
+hangall.Size = UDim2.new(0, 105, 0, 32)
+hangall.Font = Enum.Font.SourceSans
+hangall.Text = "Hang all Niggers"
+hangall.TextColor3 = Color3.fromRGB(0, 0, 0)
+hangall.TextScaled = true
+hangall.TextSize = 14.000
+hangall.TextWrapped = true
+
+burnall.Name = "burnall"
+burnall.Parent = Frame
+burnall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+burnall.Position = UDim2.new(-0.00144678354, 0, 0.738493741, 0)
+burnall.Size = UDim2.new(0, 105, 0, 32)
+burnall.Font = Enum.Font.SourceSans
+burnall.Text = "Burn all Niggers"
+burnall.TextColor3 = Color3.fromRGB(0, 0, 0)
+burnall.TextScaled = true
+burnall.TextSize = 14.000
+burnall.TextWrapped = true
+
+killall.Name = "killall"
+killall.Parent = Frame
+killall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+killall.Position = UDim2.new(0.182119653, 0, 0.738493741, 0)
+killall.Size = UDim2.new(0, 105, 0, 32)
+killall.Font = Enum.Font.SourceSans
+killall.Text = "Kill all Niggers"
+killall.TextColor3 = Color3.fromRGB(0, 0, 0)
+killall.TextScaled = true
+killall.TextSize = 14.000
+killall.TextWrapped = true
+
+fucknig.Name = "fucknig"
+fucknig.Parent = Frame
+fucknig.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fucknig.Position = UDim2.new(0.365686089, 0, 0.746525884, 0)
+fucknig.Size = UDim2.new(0, 105, 0, 32)
+fucknig.Font = Enum.Font.SourceSans
+fucknig.Text = "Fuck Niggers"
+fucknig.TextColor3 = Color3.fromRGB(0, 0, 0)
+fucknig.TextScaled = true
+fucknig.TextSize = 14.000
+fucknig.TextWrapped = true
+
+fuckallnig.Name = "fuckallnig"
+fuckallnig.Parent = Frame
+fuckallnig.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fuckallnig.Position = UDim2.new(0.545755982, 0, 0.746525884, 0)
+fuckallnig.Size = UDim2.new(0, 105, 0, 32)
+fuckallnig.Font = Enum.Font.SourceSans
+fuckallnig.Text = "Fuck all Niggers"
+fuckallnig.TextColor3 = Color3.fromRGB(0, 0, 0)
+fuckallnig.TextScaled = true
+fuckallnig.TextSize = 14.000
+fuckallnig.TextWrapped = true
+
+credits.Name = "credits"
+credits.Parent = Frame
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0.657964706, 0, 0.872004926, 0)
+credits.Size = UDim2.new(0, 200, 0, 31)
+credits.Font = Enum.Font.FredokaOne
+credits.Text = "made by oq7y / oq#6809"
+credits.TextColor3 = Color3.fromRGB(20, 110, 255)
+credits.TextSize = 17.000
+credits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextStrokeTransparency = 0.000
+
+-- Scripts:
+
+local function FYPNU_fake_script() -- fbn.Script 
+	local script = Instance.new('Script', fbn)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Fu{{baconhub:ck}} Black {{baconhub:Ni}}{{baconhub:gg}}{{baconhub:er}}{{baconhub:s}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(FYPNU_fake_script)()
+local function NDUIO_fake_script() -- insultrobloxgame.Script 
+	local script = Instance.new('Script', insultrobloxgame)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "ROBLOX is the Sh{{haxlord:itt}}iest game {{haxlord:ev}}{{haxlord:er}} lol",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(NDUIO_fake_script)()
+local function VACIOR_fake_script() -- insultrobloxgamev2.Script 
+	local script = Instance.new('Script', insultrobloxgamev2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Hello ROBLOX, i f{{baconhub:u}}c{{baconhub:k}}{{baconhub:ing}} {{baconhub:hate}} {{baconhub:your}} {{baconhub:game}} you dumb niggas",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(VACIOR_fake_script)()
+local function YZDXQCB_fake_script() -- girl.Script 
+	local script = Instance.new('Script', girl)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Girl pls F{{baconhub:u}}c{{baconhub:k}} {{baconhub:Off}} uck",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(YZDXQCB_fake_script)()
+local function AMPTB_fake_script() -- boy.Script 
+	local script = Instance.new('Script', boy)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Boy pls F{{baconhub:u}}c{{baconhub:k}} {{baconhub:Off}} uck",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(AMPTB_fake_script)()
+local function EPMR_fake_script() -- dude.Script 
+	local script = Instance.new('Script', dude)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Dude pls F{{baconhub:u}}c{{baconhub:k}} {{baconhub:Off}} uck",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(EPMR_fake_script)()
+local function MKVFZ_fake_script() -- bruh.Script 
+	local script = Instance.new('Script', bruh)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Bruh pls F{{baconhub:u}}c{{baconhub:k}} {{baconhub:Off}} uck",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(MKVFZ_fake_script)()
+local function LUNEP_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(LUNEP_fake_script)()
+local function UAMYHSA_fake_script() -- uaintsh.Script 
+	local script = Instance.new('Script', uaintsh)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "You aint S{{baconhub:h}}i{{baconhub:t}} {{baconhub:stupid}} nigga",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(UAMYHSA_fake_script)()
+local function IGANC_fake_script() -- uaintsh2.Script 
+	local script = Instance.new('Script', uaintsh2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "You aint S{{baconhub:h}}i{{baconhub:t}} {{baconhub:dumb}} nigga",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(IGANC_fake_script)()
+local function OFQUV_fake_script() -- goaway.Script 
+	local script = Instance.new('Script', goaway)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "go a{{baconhub:w}}a{{baconhub:y}} {{baconhub:dumb}} nigga",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(OFQUV_fake_script)()
+local function TBXPM_fake_script() -- goaway2.Script 
+	local script = Instance.new('Script', goaway2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "go a{{baconhub:w}}a{{baconhub:y}} {{baconhub:stupid}} nigga",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(TBXPM_fake_script)()
+local function MSAA_fake_script() -- idonttalkto.Script 
+	local script = Instance.new('Script', idonttalkto)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "I dont Talk to N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:rs}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(MSAA_fake_script)()
+local function IIYWR_fake_script() -- idonttalkto2.Script 
+	local script = Instance.new('Script', idonttalkto2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "I dont Talk to N{{baconhub:i}}g{{baconhub:ga}}{{baconhub:s}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(IIYWR_fake_script)()
+local function NQBW_fake_script() -- wehate.Script 
+	local script = Instance.new('Script', wehate)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "We Hate N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:rs}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(NQBW_fake_script)()
+local function FWPNP_fake_script() -- ihate.Script 
+	local script = Instance.new('Script', ihate)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "I Hate N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:rs}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(FWPNP_fake_script)()
+local function XBIX_fake_script() -- donttalktome.Script 
+	local script = Instance.new('Script', donttalktome)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Dont Talk to me N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:r}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(XBIX_fake_script)()
+local function UINO_fake_script() -- hangall.Script 
+	local script = Instance.new('Script', hangall)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Hang all N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:rs}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(UINO_fake_script)()
+local function VDKT_fake_script() -- burnall.Script 
+	local script = Instance.new('Script', burnall)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Burn all N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:rs}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(VDKT_fake_script)()
+local function FLERI_fake_script() -- killall.Script 
+	local script = Instance.new('Script', killall)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Kill All N{{baconhub:i}}g{{baconhub:ge}}{{baconhub:rs}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(FLERI_fake_script)()
+local function IKBTBQ_fake_script() -- fucknig.Script 
+	local script = Instance.new('Script', fucknig)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Fu{{baconhub:ck}} {{baconhub:Ni}}{{baconhub:gg}}{{baconhub:er}}{{baconhub:s}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(IKBTBQ_fake_script)()
+local function FOMCL_fake_script() -- fuckallnig.Script 
+	local script = Instance.new('Script', fuckallnig)
+
+	script.Parent.MouseButton1Click:connect(function()
+		local args = {
+			[1] = "Fu{{baconhub:ck}} all {{baconhub:Ni}}{{baconhub:gg}}{{baconhub:er}}{{baconhub:s}}",
+			[2] = "All"
+		}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(FOMCL_fake_script)()
