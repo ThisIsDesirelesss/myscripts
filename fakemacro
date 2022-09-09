@@ -20,4 +20,3 @@
             mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
         end
         onSelected(game.Players.LocalPlayer:GetMouse())
-    end
