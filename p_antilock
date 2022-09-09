@@ -1,0 +1,592 @@
+getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+   
+local runService = game:GetService("RunService")
+local character = script.Parent
+
+--Up
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.Up.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z) 
+end  
+end)
+
+
+runService.RenderStepped:Connect(function()
+if getgenv().Desync_Settings.Modes.Up.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+end
+end)
+--Down
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.Down.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Down.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Down.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Down.strengh, old_vel.Z) 
+end  
+end)
+
+
+runService.RenderStepped:Connect(function()
+if getgenv().Desync_Settings.Modes.Down.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+end
+end)
+--Right
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.Right.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Right.strengh, old_vel.Z) 
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Right.strengh, old_vel.Z) 
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Right.strengh, old_vel.Z) 
+end  
+end)
+--Left
+--Down
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.Left.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Left.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Left.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Left.strengh, old_vel.Z) 
+end  
+end)
+
+
+runService.RenderStepped:Connect(function()
+if getgenv().Desync_Settings.Modes.Left.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+end
+end)
+--All
+--Up
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.All.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z) 
+end  
+end)
+
+
+runService.RenderStepped:Connect(function()
+if getgenv().Desync_Settings.Modes.All.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, 0, old_vel.Z)    
+end
+end)
+--Down
+
+--Right
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.All.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Down.strengh, old_vel.Z) 
+end  
+end)
+
+runService.Heartbeat:Connect(function()
+if getgenv().Desync_Settings.Modes.All.enabled then
+    old_vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, Desync_Settings.Modes.Up.strengh, old_vel.Z)   
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(old_vel.X, -Desync_Settings.Modes.Down.strengh, old_vel.Z) 
+end  
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("oq's AntiLock", "BloodTheme")
+local Tab = Window:NewTab("Read")
+local Section = Tab:NewSection("Anti Aims")
+Section:NewLabel("Made by oq#6809")
+
+local Tab = Window:NewTab("Anti Aim")
+local Section = Tab:NewSection("Anti Aim")
+-- whatever
+
+Section:NewToggle("Sky Anti Aim", "Makes lockers shoot up", function(state)
+    if state then
+        getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = true,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    
+    else
+                getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    end
+end)
+
+
+
+Section:NewToggle("Ground Anti Aim", "Makes lockers shoot down", function(state)
+    if state then
+        getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = true,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    
+    else
+                getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    end
+end)
+
+
+Section:NewToggle("UnderWorld Anti Aim", "Makes Lockers shoot at their own legs", function(state)
+    if state then
+        getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = true,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    
+    else
+                getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    end
+end)
+
+Section:NewToggle("Blatant OverWorld Anti Aim ", "Makes Lockers shoot at your legs", function(state)
+    if state then
+        getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = true,
+       strengh = 50
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    
+    else
+                getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    end
+end)
+
+
+Section:NewToggle("HvH Anti Aim", "Makes Lockers shoot like a monkey", function(state)
+    if state then
+        getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 15000
+   },
+      Left = {
+       enabled = true,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    
+    else
+                getgenv().Desync_Settings = {
+    Modes = {
+   Up = {
+       enabled = false,
+       strengh = 150
+   },
+          Down = {
+       enabled = false,
+       strengh = 150
+   },
+      Right = {
+       enabled = false,
+       strengh = 150
+   },
+      Left = {
+       enabled = false,
+       strengh = 150
+   },
+         All = {
+       enabled = false,
+       strengh = 150
+   }
+     }
+    }
+    end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
+Section:NewButton("Self Dot", "Shows Your Own Velocity", function()
+        local placemarker = Instance.new("Part", game.Workspace)
+
+    function makemarker(Parent, Adornee, Color, Size, Size2)
+        local e = Instance.new("BillboardGui", Parent)
+        e.Name = "PP"
+        e.Adornee = Adornee
+        e.Size = UDim2.new(Size, Size2, Size, Size2)
+        e.AlwaysOnTop = true
+        local a = Instance.new("Frame", e)
+        a.Size = UDim2.new(1, 0, 1, 0)
+        a.BackgroundTransparency = 0
+        a.BackgroundColor3 = Color
+        local g = Instance.new("UICorner", a)
+        g.CornerRadius = UDim.new(50,50)
+        return(e)
+    end
+
+
+
+
+    spawn(function()
+        placemarker.Anchored = true
+        placemarker.CanCollide = false
+        placemarker.Size = Vector3.new(7,7,7)
+        placemarker.Transparency = 1
+        makemarker(placemarker, placemarker, Color3.fromRGB(255,255,255), 0.40, 0)
+    end)    
+
+    
+
+    
+    game:GetService"RunService".RenderStepped:connect(function()
+            placemarker.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position+(game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity*0.12984))
+        
+    end)
+
+end)
+Section:NewSlider("Fov", "Fov", 120, 70, function(s)
+workspace.CurrentCamera.FieldOfView = s
+end)
+Section:NewButton("Cframe Speed Z", "Speed Hack", function()
+    	repeat
+		wait()
+	until game:IsLoaded()
+	local L_134_ = game:service('Players')
+	local L_135_ = L_134_.LocalPlayer
+	repeat
+		wait()
+	until L_135_.Character
+	local L_136_ = game:service('UserInputService')
+	local L_137_ = game:service('RunService')
+	getgenv().Multiplier = 0.5
+	local L_138_ = true
+	local L_139_
+	L_136_.InputBegan:connect(function(L_140_arg0)
+		if L_140_arg0.KeyCode == Enum.KeyCode.LeftBracket then
+			Multiplier = Multiplier + 0.01
+			print(Multiplier)
+			wait(0.2)
+			while L_136_:IsKeyDown(Enum.KeyCode.LeftBracket) do
+				wait()
+				Multiplier = Multiplier + 0.01
+				print(Multiplier)
+			end
+		end
+		if L_140_arg0.KeyCode == Enum.KeyCode.RightBracket then
+			Multiplier = Multiplier - 0.01
+			print(Multiplier)
+			wait(0.2)
+			while L_136_:IsKeyDown(Enum.KeyCode.RightBracket) do
+				wait()
+				Multiplier = Multiplier - 0.01
+				print(Multiplier)
+			end
+		end
+		if L_140_arg0.KeyCode == Enum.KeyCode.Z then
+			L_138_ = not L_138_
+			if L_138_ == true then
+				repeat
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.Humanoid.MoveDirection * Multiplier
+					game:GetService("RunService").Stepped:wait()
+				until L_138_ == false
+			end
+		end
+	end)
+end)
+Section:NewSlider("Cframe Speed", "speed hack i recommend 1-4", 6, 0, function(s)
+    getgenv().Multiplier = s
+end)
+
+Section:NewButton("Trash Talk J", "Trash Talk", function()
+
+    local plr = game.Players.LocalPlayer
+    repeat wait() until plr.Character
+    local char = plr.Character
+
+    local garbage = {
+        "sit down little dog";
+        "cope";
+        "imagine being you right now";
+        "why do you even try";
+        "I didn't think you were this bad";
+        "so trash";
+        "get good";
+        "get rekt";
+        "son why u bad";
+        "ez";
+        "log off, you're bad";
+        "worst player in the world 🤣🤣";
+        "you're my seed";
+    }
+
+
+    function TrashTalk(inputObject, gameProcessedEvent)
+        if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+                garbage[math.random(1,#garbage)],
+                "All"
+            )
+        end
+    end
+
+    game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+ 
+if combo > 45 then
+   c("0x01")
+end
+end)
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Owner & Creator: oq#6809")
+
+Section:NewKeybind("Toggle UI Keybind", "KeybindInfo", Enum.KeyCode.V, function()
+    Library:ToggleUI()
+end)
