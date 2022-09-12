@@ -57,4 +57,3 @@ local plr = game.Players.LocalPlayer
                      end
                 end
                 game:GetService("UserInputService").InputBegan:connect(TrashTalk)
-                end)
