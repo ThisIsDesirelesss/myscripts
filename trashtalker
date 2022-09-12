@@ -4,22 +4,19 @@ local plr = game.Players.LocalPlayer
 
                 local garbage = {
                 "ur bad";
-                "U NOOB ME PRO!";
                 "nice try bud";
                 "ez";
                 "my grandma has more skill than you";
-                "gun user";
-                "bunny hopper";
                 "trash";
                 "LOL";
-                "LMAO";
+                "u like the ground?";
                 "imagine being you right now";
                 "xd";
                 "cope";
                 "you smell";
                 "ur bad";
                 "why do you even try";
-                "I didn't think being this bad was possible";
+                "i didn't think being this bad was possible";
                 "npc";
                 "no skill";
                 "you thought";
@@ -38,6 +35,7 @@ local plr = game.Players.LocalPlayer
                 "hahaha I won";
                 "no one likes u";
                 "darn";
+                "be gone";
                 "thank you for your time";
                 "you were so close!!11!";
                 "better luck next time!";
@@ -46,7 +44,7 @@ local plr = game.Players.LocalPlayer
                 "/e dab";
                 "time to take out the trash";
                 "did you get worse?";
-                "I'm surprised you haven't quit yet";
+                "i'm surprised you haven't quit yet";
                 "sonned";
             }
                 function TrashTalk(inputObject, gameProcessedEvent)
