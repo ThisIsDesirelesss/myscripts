@@ -1,0 +1,60 @@
+local plr = game.Players.LocalPlayer
+                repeat wait() until plr.Character
+                local char = plr.Character
+
+                local garbage = {
+                "ur bad";
+                "nice try bud";
+                "ez";
+                "my grandma has more skill than you";
+                "gun user";
+                "bunny hopper";
+                "trash";
+                "LOL";
+                "LMAO";
+                "imagine being you right now";
+                "xd";
+                "cope";
+                "you smell";
+                "ur bad";
+                "why do you even try";
+                "I didn't think being this bad was possible";
+                "npc";
+                "no skill";
+                "you thought";
+                "bad";
+                "you're nothing";
+                "lol";
+                "so trash";
+                "dog water";
+                "ur salty";
+                "salty";
+                "ur mad son";
+                "cry more";
+                "keep crying";
+                "cry baby";
+                "lol u lost";
+                "hahaha I won";
+                "no one likes u";
+                "darn";
+                "thank you for your time";
+                "you were so close!!11!";
+                "better luck next time!";
+                "rodent";
+                "ur so bad ur my seed";
+                "/e dab";
+                "time to take out the trash";
+                "did you get worse?";
+                "I'm surprised you haven't quit yet";
+                "sonned";
+            }
+                function TrashTalk(inputObject, gameProcessedEvent)
+                 if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then
+                game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+                garbage[math.random(1,#garbage)],
+                "All"
+                )
+                     end
+                end
+                game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+                end)
