@@ -46,6 +46,8 @@ local plr = game.Players.LocalPlayer
                 "did you get worse?";
                 "i'm surprised you haven't quit yet";
                 "sonned";
+                "🤓";
+                "🤡";
             }
                 function TrashTalk(inputObject, gameProcessedEvent)
                  if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then
