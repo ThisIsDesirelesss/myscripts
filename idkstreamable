@@ -7,8 +7,10 @@ mouse.KeyDown:Connect(function(key)
 if key == hotkey then
 if getgenv().ValiantAimHacks.SilentAimEnabled == true then
  getgenv().ValiantAimHacks.SilentAimEnabled = false
+ print("Disabled")
 else
 getgenv().ValiantAimHacks.SilentAimEnabled = true
+print("Enabled")
 end
 end
 end)
