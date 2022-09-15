@@ -12,7 +12,7 @@ if getgenv().ValiantAimHacks.SilentAimEnabled == true then
  Notify({
 Description = "Lock is DISABLED";
 Title = "oq#6809";
-Duration = 1;
+Duration = 3;
 });
 
 else
@@ -20,7 +20,7 @@ getgenv().ValiantAimHacks.SilentAimEnabled = true
  Notify({
 Description = "Lock is ENABLED!";
 Title = "oq#6809";
-Duration = 1;
+Duration = 3;
 });
 end
 end
