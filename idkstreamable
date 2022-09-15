@@ -1,5 +1,7 @@
 local hotkey = "v" -- toggle key | u can put what u want
 local mouse = game.Players.LocalPlayer:GetMouse()
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
 
 -- // private V1.1.1.1
 
@@ -7,10 +9,19 @@ mouse.KeyDown:Connect(function(key)
 if key == hotkey then
 if getgenv().ValiantAimHacks.SilentAimEnabled == true then
  getgenv().ValiantAimHacks.SilentAimEnabled = false
- print("Disabled")
+ Notify({
+Description = "Lock is DISABLED";
+Title = "oq#6809";
+Duration = 1;
+});
+
 else
 getgenv().ValiantAimHacks.SilentAimEnabled = true
-print("Enabled")
+ Notify({
+Description = "Lock is ENABLED!";
+Title = "oq#6809";
+Duration = 1;
+});
 end
 end
 end)
