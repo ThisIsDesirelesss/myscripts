@@ -1,33 +1,14 @@
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
--- // uwu script made by earth
-
-local hotkey = "v" -- toggle key | u can put what u want
+local hotkey = "v" -- toggle key
 local mouse = game.Players.LocalPlayer:GetMouse()
 
--- // private V1.1.1.1
+
 
 mouse.KeyDown:Connect(function(key)
 if key == hotkey then
 if getgenv().ValiantAimHacks.SilentAimEnabled == true then
  getgenv().ValiantAimHacks.SilentAimEnabled = false
- print("Disabled")
 else
 getgenv().ValiantAimHacks.SilentAimEnabled = true
-print("Enabled")
 end
 end
 end)
@@ -38,10 +19,10 @@ local Players = game:GetService("Players")
 
 -- // Vars
 local LocalPlayer = Players.LocalPlayer
-local accomidationfactor = 0.1
+local accomidationfactor = 0.12567724521
 
 -- // Silent Aim Module
-local SilentAim = loadstring(game:HttpGet("https://pastebin.com/raw/xceWCFmx"))()
+local SilentAim = loadstring(game:HttpGet("https://pastebin.com/raw/2f0mGbMP"))()
 SilentAim.TeamCheck = false
 -- // Metatable vars
 local mt = getrawmetatable(game)
@@ -60,7 +41,7 @@ end
 -- // Hook
 mt.__index = newcclosure(function(t, k)
     if (t:IsA("Mouse") and (k == "Hit")) then
-        --print(t, k)
+        print(t, k)
         local CPlayer = SilentAim.Selected
         if (SilentAim.checkSilentAim()) then
             if (CPlayer.Character:FindFirstChild("HumanoidRootPart")) then
@@ -73,3 +54,4 @@ end)
 
 -- // Revert
 setreadonly(mt, true)
+getgenv().ValiantAimHacks.FOV = 30
