@@ -10,7 +10,7 @@ if key == hotkey then
 if getgenv().ValiantAimHacks.SilentAimEnabled == true then
  getgenv().ValiantAimHacks.SilentAimEnabled = false
  Notify({
-Description = "Lock is DISABLED !";
+Description = "Lock has been DISABLED !";
 Title = "oq#6809";
 Duration = 3;
 });
@@ -18,7 +18,7 @@ Duration = 3;
 else
 getgenv().ValiantAimHacks.SilentAimEnabled = true
  Notify({
-Description = "Lock is ENABLED !";
+Description = "Lock has been ENABLED !";
 Title = "oq#6809";
 Duration = 3;
 });
