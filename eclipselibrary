@@ -21,7 +21,7 @@ local library = {
     ended = {},
     changed = {},
     folders = {
-        assets = "devine/assets",
+        assets = "INTAVE/assets",
     },
     shared = {
         initialized = false,
