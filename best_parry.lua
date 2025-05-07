@@ -19,7 +19,7 @@ local Something = GetHttp("https://raw.githubusercontent.com/ScripterzNation/bla
 
 local Win = loadstring(Something)():Window("Project Ballz", "Blade Ball")
 local Ragebot = Win:Tab("Ragebot")
-local Credits = Win:Tab("Credits")
+local Credits = Win:Tab("Misc")
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
