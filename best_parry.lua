@@ -1,7 +1,3 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-
 print("Welcome User!")
 
 local req = (syn and syn.request) or (http and http.request) or http_request
