@@ -3,19 +3,18 @@ print("Welcome User!")
 local req = (syn and syn.request) or (http and http.request) or http_request
 
 function GetHttp(URL)
-	local Data = nil
-	local Test = req({
+    local Data = nil
+    local Test = req({
         Url = URL,
         Method = 'GET',
-	})
-	for i,v in pairs(Test) do
-		Data = v
-	end
-	return Data
+    })
+    for i,v in pairs(Test) do
+        Data = v
+    end
+    return Data
 end
 
 local Something = GetHttp("https://raw.githubusercontent.com/ThisIsDesirelesss/myscripts/refs/heads/main/bestparryuilibbb")
-
 
 local Win = loadstring(Something)():Window("Project Ballz", "Blade Ball")
 local Ragebot = Win:Tab("Ragebot")
@@ -24,6 +23,7 @@ local Credits = Win:Tab("Misc")
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local VirtualUser = game:GetService("VirtualUser")
+local UserInputService = game:GetService("UserInputService")
 
 local player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
@@ -90,8 +90,8 @@ end)
 
 Ragebot:line()
 
-Ragebot:Toggle("Aim At Closest Player", false, function(t)
-    ClosestPlayer_var = t
+Ragebot:Toggle("Aim At Player Near Mouse", false, function(t)
+    MouseTargetPlayer_var = t
 end)
 
 Ragebot:Toggle("Random Teleports", false, function(t)
@@ -106,24 +106,28 @@ Ragebot:Slider("Teleport Distance Z", -40, 40, 0, function(t)
     TeleportDistanceZ = t
 end)
 
-function GetMouse()
-    local UserInputService = game:GetService("UserInputService")
-    return UserInputService:GetMouseLocation()  -- Ensure this is the correct method for your setup
-end
-
-function GetClosestPlayer()
+function GetPlayerNearMouse()
+    local mousePos = UserInputService:GetMouseLocation()
     local closestDistance = math.huge
     local closestTarget = nil
+    
     for _, v in pairs(game:GetService("Workspace").Alive:GetChildren()) do
         if v and v:FindFirstChild("HumanoidRootPart") and v ~= player.Character then
             local humanoidRootPart = v.HumanoidRootPart
-                local distance = (player.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude --(Vector2.new(viewportPoint.X, viewportPoint.Y) - mousePos).magnitude
+            local vector, onScreen = camera:WorldToViewportPoint(humanoidRootPart.Position)
+            
+            if onScreen then
+                local screenPoint = Vector2.new(vector.X, vector.Y)
+                local distance = (screenPoint - mousePos).Magnitude
+                
                 if distance < closestDistance then
                     closestDistance = distance
                     closestTarget = v
                 end
+            end
         end
     end
+    
     return closestTarget
 end
 
@@ -132,8 +136,9 @@ spawn(function()
         if PlayerSaftey then
             if player.Character.Parent.Name == "Dead" then return end
             pcall(function()
-                if (GetClosestPlayer().HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude <= PlayerSaftey_Distance then
-                    player.Character.HumanoidRootPart.CFrame = GetClosestPlayer().HumanoidRootPart.CFrame * CFrame.new(-0, 0, -PlayerSaftey_Distance)
+                local target = GetPlayerNearMouse()
+                if target and (target.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude <= PlayerSaftey_Distance then
+                    player.Character.HumanoidRootPart.CFrame = target.HumanoidRootPart.CFrame * CFrame.new(-0, 0, -PlayerSaftey_Distance)
                 end
             end)
         end
@@ -173,12 +178,12 @@ local function measureVerticalDistance(humanoidRootPart, targetPart)
 end
 
 function GetHotKey()
-	for i,v in pairs(player.PlayerGui.Hotbar.Block.HotkeyFrame:GetChildren()) do
-		if v:IsA("TextLabel") then
-			return v.Text
-		end
-	end
-	return ""
+    for i,v in pairs(player.PlayerGui.Hotbar.Block.HotkeyFrame:GetChildren()) do
+        if v:IsA("TextLabel") then
+            return v.Text
+        end
+    end
+    return ""
 end
 
 local text = player.PlayerGui.Hotbar.Block.HotkeyFrame.F
@@ -194,10 +199,10 @@ spawn(function()
     while task.wait() do
         if RandAutoaParry[tostring(RandRNG)] then
             local success, err = pcall(function()
-				for i, v in pairs(game:GetService("Workspace").Balls:GetChildren()) do
+                for i, v in pairs(game:GetService("Workspace").Balls:GetChildren()) do
                     if v:IsA("Part") then
                         if not player.Character:FindFirstChild("Highlight") then return end
-						local part, speed = getSpeed(v)
+                        local part, speed = getSpeed(v)
                         if part and speed then
                             local minDistance = 2.5 * (speed * 0.1) + 2
                             if minDistance == 0 or minDistance <= 20 then
@@ -207,12 +212,12 @@ spawn(function()
                             elseif minDistance == 88 or minDistance <= 110 then
                                 BallSpeed = 90
                             end
-							if (player.Character.HumanoidRootPart.Position - part.Position).Magnitude <= (BallSpeed) then
+                            if (player.Character.HumanoidRootPart.Position - part.Position).Magnitude <= (BallSpeed) then
                                 CanSlash = true
                             else
                                 CanSlash = false
                             end
-						end
+                        end
                     end
                 end
                 
@@ -235,24 +240,21 @@ spawn(function()
         if AutoWalk then
             pcall(function()
                 if player.Character.Parent.Name == "Dead" then return end
-				for i, v in pairs(game:GetService("Workspace").Balls:GetChildren()) do
+                for i, v in pairs(game:GetService("Workspace").Balls:GetChildren()) do
                     if v:IsA("Part") then
-						local part, speed = getSpeed(v)
+                        local part, speed = getSpeed(v)
                         if part and speed then
-							if speed > 5 then
+                            if speed > 5 then
                                 if not player.Character:FindFirstChild("Highlight") then
                                     player.Character.Humanoid:MoveTo(part.Position + Vector3.new(AutoWalkDistanceX, 0, AutoWalkDistanceZ))
                                 else
-                                    for i,v in pairs(game:GetService("Workspace").Alive:GetChildren()) do
-                                        if player.Character.Parent.Name == "Alive" then
-                                            if  v ~= player.Character then
-                                                player.Character.Humanoid:MoveTo(v.HumanoidRootPart.Position + Vector3.new(AutoWalkDistanceX, 0, AutoWalkDistanceZ))
-                                            end
-                                        end
+                                    local target = GetPlayerNearMouse()
+                                    if target then
+                                        player.Character.Humanoid:MoveTo(target.HumanoidRootPart.Position + Vector3.new(AutoWalkDistanceX, 0, AutoWalkDistanceZ))
                                     end
                                 end
-							end
-						end
+                            end
+                        end
                     end
                 end
             end)
@@ -267,13 +269,12 @@ end)
 
 spawn(function()
     while task.wait() do
-        if ClosestPlayer_var then
+        if MouseTargetPlayer_var then
             pcall(function()
                 if player.Character.Parent.Name == "Dead" then return end
-                local OldCameraFrame = workspace.CurrentCamera.CFrame
-                local ClosestPlayer = GetClosestPlayer()
-                if ClosestPlayer then
-                    workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, ClosestPlayer.Head.Position)
+                local target = GetPlayerNearMouse()
+                if target then
+                    workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, target.Head.Position)
                 end
             end)
         end
@@ -287,7 +288,7 @@ spawn(function()
                 if player.Character.Parent.Name == "Dead" then return end
                 for i, v in pairs(game:GetService("Workspace").Balls:GetChildren()) do
                     if v:IsA("Part") then
-						local part, speed = getSpeed(v)
+                        local part, speed = getSpeed(v)
                         player.Character.HumanoidRootPart.CFrame = part.CFrame * CFrame.new(TeleportDistanceX, 0, TeleportDistancez)
                     end
                 end
